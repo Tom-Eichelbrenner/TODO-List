@@ -1,17 +1,9 @@
 import {createHTML} from "./createHTML";
 
-export let todoList = {
-    todo1: {
-        todo: "Faire a mange",
-        checked: false
-    },
-    todo2: {
-        todo: "Faire la vaisselle",
-        checked: true
-    }
-}
+export let todoList = {}
 
 export function loadHTML(e) {
+    if (!window.localStorage.getItem("data")) return
     const data = JSON.parse(window.localStorage.getItem('data'));
     todoList = data;
     Object

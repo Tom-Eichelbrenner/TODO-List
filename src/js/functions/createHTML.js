@@ -8,10 +8,10 @@ export function createHTML(todo, key) {
     const html = `
             <span>${todo.todo}</span>
             <button name="trash" class="trash">🗑️</button>
-            <button name="check" class="check">✔️</button>
+            <button name="check" class="check">${todo.checked ? '♻' : '✔️'}</button>
     `
     const li = document.createElement("li");
-    li.classList.add('item');
+    li.classList.add('item', todo.checked ? 'flip' : null);
     li.setAttribute("data-key", key);
     li.innerHTML = html;
     itemsList.insertBefore(li, itemsList.firstChild);
