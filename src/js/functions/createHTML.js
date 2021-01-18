@@ -1,6 +1,9 @@
 import {itemsList} from "../var";
 
 export function createHTML(todo) {
+    if (!todo){
+        return
+    }
     const html = `
             <span>${todo}</span>
             <button name="trash" class="trash">🗑️</button>
