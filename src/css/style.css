@@ -21,7 +21,7 @@ body {
     background: #009688;
     border: none;
     color: #fff;
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto', sans-serif;
     outline: none;
     padding: 10px;
 }
@@ -29,6 +29,7 @@ body {
 .form > input {
     width: 100%;
 }
+
 .form > input::placeholder {
     color: #B2DFDB;
 }
@@ -74,6 +75,7 @@ button {
     padding: 10px;
     transition: 0.6s;
 }
+
 .item span:first-child {
     width: 100%;
 }
@@ -87,6 +89,7 @@ button {
     color: #9E9E9E;
     transform: rotateX(360deg);
 }
+
 .flip > span {
     text-decoration: line-through;
 }

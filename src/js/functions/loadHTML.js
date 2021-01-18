@@ -1,5 +1,7 @@
 import {createHTML} from "./createHTML";
 
+const checkButtons = document.querySelectorAll('.check')
+Array.from(checkButtons)
 export let todoList = {
     todo1: {
         todo: "Faire a mange"
