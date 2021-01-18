@@ -1,7 +1,7 @@
 import {itemsList} from "../var";
-import {check, trash} from "./events";
+import {check, save, trash} from "./events";
 
-export function createHTML(todo) {
+export function createHTML(todo, key) {
     if (!todo.todo) {
         return
     }
@@ -12,6 +12,7 @@ export function createHTML(todo) {
     `
     const li = document.createElement("li");
     li.classList.add('item');
+    li.setAttribute("data-key", key);
     li.innerHTML = html;
     itemsList.insertBefore(li, itemsList.firstChild);
 

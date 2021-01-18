@@ -1,6 +1,7 @@
 import {createHTML} from "./createHTML";
 import {formInput} from "../var";
 import {todoList} from "./loadHTML";
+import {save} from "./events";
 
 
 export function createItem(e) {
@@ -12,6 +13,7 @@ export function createItem(e) {
         checked: false
     }
 
-    createHTML(todoList[timestamp])
+    createHTML(todoList[timestamp], timestamp)
+    save()
     this.reset();
 }
