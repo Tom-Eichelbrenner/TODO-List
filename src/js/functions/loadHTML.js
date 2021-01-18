@@ -1,6 +1,6 @@
-import {createHTML} from "./js/functions/createHTML";
+import {createHTML} from "./createHTML";
 
-let todoList = {
+export let todoList = {
     todo1: {
         todo: "Faire a mange"
     },
