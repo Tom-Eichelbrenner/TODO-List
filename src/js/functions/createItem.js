@@ -1,11 +1,12 @@
 import {createHTML} from "./createHTML";
-import {formInput} from "../var";
+import {formButton, formInput} from "../var";
 import {todoList} from "./loadHTML";
-import {save} from "./events";
+import {animeFormButton, save} from "./events";
 
 
 export function createItem(e) {
     e.preventDefault();
+    animeFormButton(formButton)
 
     const timestamp = Date.now();
     todoList[timestamp] = {
