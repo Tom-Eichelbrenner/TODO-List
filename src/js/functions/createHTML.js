@@ -1,11 +1,11 @@
 import {itemsList} from "../var";
 
 export function createHTML(todo) {
-    if (!todo){
+    if (!todo.todo){
         return
     }
     const html = `
-            <span>${todo}</span>
+            <span>${todo.todo}</span>
             <button name="trash" class="trash">🗑️</button>
             <button class="check">✔️</button>
     `
